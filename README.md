@@ -1,5 +1,9 @@
-# Multiplatform app template
+# My Shopping
 
-Template app project for Multiplatform project with Kotlin/Multiplatform + apptronicnet/core framework.
+Here will be an app for easy shopping
 
-Use this template to start a new project for Android or Multiplatform application.
+Using MVVM with Kotlin/Multiplatform + apptronicnet/core framework.
+
+Full readme coming soon...
+
+Slava Bilokur @ 2020
