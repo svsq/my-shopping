@@ -8,10 +8,10 @@ object ShoppingListItemViewModelBuilder : ViewModelBuilder<ShoppingItem, Int, Sh
     override fun getId(item: ShoppingItem) = item.id
 
     override fun onCreateViewModel(parent: Context, item: ShoppingItem): ShoppingListItemViewModel {
-        return parent.shoppingListItemViewModel().also { onUpdateViewModel(it, item) }
+        return parent.shoppingListItemViewModel(item).also { onUpdateViewModel(it, item) }
     }
 
     override fun onUpdateViewModel(viewModel: ShoppingListItemViewModel, newItem: ShoppingItem) {
-        viewModel.item.set(newItem)
+        //viewModel.item.set(newItem)
     }
 }
