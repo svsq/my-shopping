@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/helloText"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:padding="24dp"
-        android:textColor="#000"
-        android:textSize="20sp"
-        tools:text="Hello!" />
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <TextView style="@style/AppTheme.Text.SubHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/shopping_list"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:paddingHorizontal="42dp"
+        android:text="@string/add_new"
+        android:layout_gravity="bottom|center"
+        android:textColor="@color/colorWhite"
+        app:backgroundTint="@color/colorPrimary"/>
+
+</FrameLayout>

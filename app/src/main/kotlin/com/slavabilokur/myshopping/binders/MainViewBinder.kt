@@ -13,7 +13,7 @@ class MainViewBinder : ViewBinder<MainViewModel>() {
 
     override fun onBindView(view: View, viewModel: MainViewModel) {
         with(view) {
-            bindText(helloText, viewModel.text)
+            //bindText(helloText, viewModel.text)
         }
     }
 

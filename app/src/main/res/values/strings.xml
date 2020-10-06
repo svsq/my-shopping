@@ -3,4 +3,6 @@
     <string name="welcome_to">Welcome to</string>
     <string name="welcome_description">Using this app you can easy create shopping lists, check taken goods and control prices and save your money</string>
     <string name="get_started">Get Started</string>
+    <string name="shopping_list">Shopping List:</string>
+    <string name="add_new">+ add new</string>
 </resources>

@@ -16,6 +16,7 @@ class MainViewModel(context: ViewModelContext) : ViewModel(context) {
 
     // app first screen model
 
-    val text = value("Hello, apptronic.net/core!")
+
+
 
 }
