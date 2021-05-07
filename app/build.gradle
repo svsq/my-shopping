@@ -18,7 +18,7 @@ kotlin {
                 implementation kotlin('stdlib-common')
                 // required by to apptronic.net/core
                 implementation kotlin('reflect')
-                implementation "net.apptronic.core:core-commons:$apptronic_net_core_version"
+                implementation "net.apptronic.core:core-commons:0.9.30"
                 // required by to apptronic.net/core
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
             }
@@ -28,19 +28,19 @@ kotlin {
                 implementation kotlin('stdlib')
                 // required by to apptronic.net/core
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
-                implementation "net.apptronic.core:core-android:$apptronic_net_core_version"
+                implementation "net.apptronic.core:core-android:0.8.10"
 
                 // generic android dependencies
-                implementation 'androidx.core:core-ktx:1.3.1'
+                implementation 'androidx.core:core-ktx:1.3.2'
                 implementation 'androidx.appcompat:appcompat:1.2.0'
-                implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-                implementation "com.google.android.material:material:1.2.1"
-                implementation 'androidx.recyclerview:recyclerview:1.1.0'
+                implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+                implementation "com.google.android.material:material:1.3.0"
+                implementation 'androidx.recyclerview:recyclerview:1.2.0'
             }
         }
         androidTest {
             dependencies {
-                implementation "junit:junit:4.13"
+                implementation "junit:junit:4.13.2"
                 implementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
             }
         }
@@ -51,7 +51,7 @@ kotlin {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.slavabilokur.myshopping"
